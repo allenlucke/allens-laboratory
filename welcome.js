@@ -12,3 +12,28 @@ message += ", Just be careful what you touch. "
 message += " Like the inhabitants of " + visitorFrom + " Some of the experiments here are far from stable."
 message += " Oh, and might I suggest you view our book on swallows. . . I'm afraid " + meanAirSpeed + " is not at all correct." 
 document.write(message);
+
+// testing grounds
+let ingredient;
+let burger = [ `mayo`, `onion`, `bacon`, `cheese`, `patty`,];
+console.log( burger );
+
+for ( let ingredient of burger ) {
+  console.log( `this is what I want on my burger ${ingredient}` );
+  if (ingredient === burger[2]) {
+    console.log( `${burger[2]} is my favorite topping` );
+  }
+}
+
+
+
+let attrition = 5;
+const maxAttrition = 100;
+
+while ( attrition < maxAttrition ) {
+  console.log( `Be sure to watch your attrition, current level is ${attrition}` );
+  attrition ++;
+  if ( attrition === maxAttrition ) {
+    console.log( `I warned you!!! Current attrition level is ${attrition}, you are now dead.`);
+  }
+}
